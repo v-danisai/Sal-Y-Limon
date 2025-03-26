@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sal Y Limon Mexican Bistro & Day Club - Reservations</title>
+    <link rel="icon" type="image/x-icon" href="images/logo_nobg.png">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo_nobg.png" alt="Sal Y Limon Logo">
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="reserve-button">
+                <button class="reserve-btn"><a href="reservations.html">Reserve Your Spot!</a></button>
+            </div>
+        </nav>
+        <div class="nav-border"></div>
+    </header>
+
+    <main>
+        <section class="reservations-section section" id="reservations">
+            <div class="section-content">
+                <h2>Make a Reservation</h2>
+                <p>Reserve your spot for dining or day club access.</p>
+                <form action="reservation.php" method="post">
+                    <div class="elem-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern="[A-Z\sa-z]{3,20}" required>
+                    </div>
+                    <div class="elem-group">
+                        <label for="email">Your E-mail</label>
+                        <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+                    </div>
+                    <div class="elem-group">
+                        <label for="phone">Your Phone</label>
+                        <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})" required>
+                    </div>
+                    <hr>
+                    <div class="elem-group inlined">
+                        <label for="adult">Adults</label>
+                        <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+                    </div>
+                    <div class="elem-group inlined">
+                        <label for="child">Children</label>
+                        <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+                    </div>
+                    <div class="elem-group inline">
+                        <label for="reservation_date">Reservation Date</label>
+                        <input type="date" id="reservation_date" name="reservation_date" required   >
+                    </div>
+                    <div class="elem-group inlined">
+                        <label for="checkin-time">Check-in Time</label>
+                        <input type="time" id="checkin-time" name="checkin_time" min="11:00" max="22:00" required>
+                    </div>
+                    <div class="elem-group inlined">
+                        <label for="checkout-time">Check-out Time</label>
+                        <input type="time" id="checkout-time" name="checkout_time" min="11:00" max="22:00" required>
+                    </div>
+                    <div class="elem-group">
+                        <label for="room-selection">Select Room Preference</label>
+                        <select id="room-selection" name="room_preference" required>
+                            <option value="">Choose a Room from the List</option>
+                            <option value="connecting">Main</option>
+                            <option value="adjoining">Secondary</option>
+                            <option value="adjacent">Inside Club</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="elem-group">
+                        <label for="message">Anything Else?</label>
+                        <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+                    </div>
+                    <button class="cta-btn">Book Now</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Sal Y Limon Mexican Bistro & Day Club. All rights reserved.</p>
+            <p>San Narciso Village, Corozal District, Belize C.A | (501) 636-2275 | @ek_leez</p>
+            <p>Hours: Mon-Sun 11 AM - 10 PM</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100063753512915" target="_blank">Facebook</a> | 
+                <a href="https://www.instagram.com/salylimonmbdc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a> | 
+                <a href="https://wa.me/5016362275?text=Hello,%20I%20would%20like%20to%20contact%20Sal%20Y%20Limon!" target="_blank">Whatsapp</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

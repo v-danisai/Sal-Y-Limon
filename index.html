@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sal Y Limon Mexican Bistro & Day Club</title>
+    <link rel="icon" type="image/x-icon" href="images/logo_nobg.png">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo_nobg.png" alt="Sal Y Limon Logo">
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="reserve-button">
+                <button class="reserve-btn"><a href="reservations.html">Reserve Your Spot!</a></button>
+            </div>
+        </nav>
+        <div class="nav-border"></div>
+    </header>
+
+    <div class="sections-container">
+        <!-- Hero Section with Slideshow -->
+        <section class="hero section" id="home">
+            <div class="slideshow-container">
+                <div class="slide active">
+                    <img src="images/tacos_margarita.webp" alt="Tacos and Margaritas" class="hero-image">
+                    <div class="hero-content">
+                        <h1>Appetizing Tacos</h1>
+                        <p>At Sal Y Limon, you will find the most delicious and exquisite tacos.</p>
+                        <button class="order-btn"><a href="reservations.html">Order or Reserve Now!</a></button>
+                        <img src="images/taco_character.png" alt="Sombrero Taco Character" class="taco-character">
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/fiesta.jpg" alt="Margaritas at Day Club" class="hero-image">
+                    <div class="hero-content">
+                        <h1>Refreshing Margaritas</h1>
+                        <p>Enjoy our signature margaritas at Sal Y Limon’s vibrant day club.</p>
+                        <button class="order-btn">Order or Reserve Now!</button>
+                        <img src="images/taco_character.png" alt="Sombrero Taco Character" class="taco-character">
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/dayclubvibes.jpg" alt="Day Club Pool" class="hero-image">
+                    <div class="hero-content">
+                        <h1>Vibrant Day Club</h1>
+                        <p>Relax by the pool and enjoy the lively atmosphere at Sal Y Limon.</p>
+                        <button class="order-btn"><a href="reservations.html">Order or Reserve Now!</a></button>
+                        <img src="images/taco_character.png" alt="Sombrero Taco Character" class="taco-character">
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+        </section>
+
+        <!-- Welcome Section (About Us) -->
+        <section class="welcome-section section" id="about">
+            <div class="section-content">
+                <h2>Welcome to Sal Y Limon</h2>
+                <p>Experience authentic Mexican cuisine and vibrant day club vibes at Sal Y Limon Bistro & Day Club. Join us for delicious tacos, refreshing margaritas, and unforgettable events!</p>
+                <img src="images/logo.jpg" height="400px">
+                <button class="cta-btn"><a href="gallery.html">Visit Us Today!</a></button>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location-section section" id="location">
+            <div class="section-content">
+                <h2>Our Location</h2>
+                <p>San Narciso Village, Corozal District, Belize C.A</p>
+                <p>Contact us at: (501) 636-2275 or @ek_leez</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.4352593293247!2d-88.51890412476844!3d18.302652482749153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5bedb442e3a7c9%3A0x1a7c8fb2c67b708e!2sSal%20Y%20Limon%20Mexican%20Bistro%20%26%20Day%20Club!5e1!3m2!1sen!2sbz!4v1740579449815!5m2!1sen!2sbz" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <button class="cta-btn"><a href="https://maps.app.goo.gl/yAULzU8Frp2NqVyTA" target="_blank">Get Direction</a>s</button>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section class="events-section section" id="events">
+            <div class="section-content">
+                <h2>Upcoming Events</h2>
+                <p>Check out our live music nights, special fiestas, and day club parties!</p>
+                <iframe src="https://calendar.google.com/calendar/embed?src=0d60bf1da73e7583dd20707145581184bce41512e6a1e51af8194e01e66272fd%40group.calendar.google.com&ctz=UTC" style="border: 0" width="600" height="400" frameborder="0" scrolling="no"></iframe>
+                <button class="cta-btn"><a href="https://calendar.google.com/calendar/embed?src=0d60bf1da73e7583dd20707145581184bce41512e6a1e51af8194e01e66272fd%40group.calendar.google.com&ctz=UTC" target="_blank">View Events Calendar</a></button>
+            </div>
+        </section>
+
+        
+
+        <!-- Testimonials/Reviews -->
+        <section class="testimonials section">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-items">
+                <div class="testimonial-item">
+                    <p>"The tacos here are absolutely amazing—best I’ve ever had!"</p>
+                    <cite>- Zuriel L.</cite>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Fantastic day club vibe and incredible margaritas!"</p>
+                    <cite>- Juan P.</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call-to-Action Block -->
+        <section class="cta-block section">
+            <h2>Ready to Dine or Relax?</h2>
+            <p>Reserve your spot now and experience the best of Mexican cuisine and day club fun at Sal Y Limon!</p>
+            <button class="cta-btn"><a href="reservations.html">Reserve Now!</a></button>
+        </section>
+    </div>
+
+    <script src="js/slideshow.js"></script>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Sal Y Limon Mexican Bistro & Day Club. All rights reserved.</p>
+            <p>San Narciso Village, Corozal District, Belize C.A | (501) 636-2275 | @ek_leez</p>
+            <p>Hours: Mon-Sun 11 AM - 10 PM</p>
+            <div class="social-links">
+                <img src="icons/facebook.png"><a href="https://www.facebook.com/profile.php?id=100063753512915" target="_blank">Facebook</a> | <img src="icons/instagram.png"><a href="https://www.instagram.com/salylimonmbdc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a> | <img src="icons/whatsapp.png"><a href="https://wa.me/5016362275?text=Hello,%20I%20would%20like%20to%20contact%20Sal%20Y%20Limon!" target="_blank">Whatsapp</a>
+            </div>
+    </footer>
+
+</body>
+</html>
